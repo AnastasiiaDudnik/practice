@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!--header content-->
-    <nav>
-      <header>
-        <a href="./index.html">
+    <header class="header">
+        <div class="container nav-container">
+        
+        <a class="header-link" href="./index.html">
           <img
             src="./images/header/logo.png"
             alt="company's logo"
@@ -19,24 +25,37 @@
             height="56"
           />
         </a>
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Services and Prices</a></li>
-          <li><a href="">Barbers</a></li>
-          <li><a href="">Contacts</a></li>
+        <nav class="main-nav">
+        <ul class="list nav-list">
+          <li>
+            <a class="link header-nav-link" href="">About</a>
+          </li>
+          <li>
+            <a class="link header-nav-link" href="">Services and Prices</a>
+          </li>
+          <li>
+            <a class="link header-nav-link" href="">Barbers</a>
+          </li>
+          <li>
+            <a class="link header-nav-link" href="">Contacts</a></li>
         </ul>
-        <div>
-          <a href="tel:+380441111111">+38 044 111 11 11</a>
-          <button type="button">Online-booking</button>
+        </nav>
+        <div class="header-group">
+          <a class="link header-contact-link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="btn" type="button">Online-booking</button>
+        </div>
+        
         </div>
       </header>
-    </nav>
+    
+        
     <main>
       <!--section 1-->
-      <section>
-        <ul>
+      <section class="section hero">
+        <div class="container">
+        <ul class="list">
           <li>
-            <a
+            <a class="link"
               href="https://www.instagram.com"
               target="_blank"
               rel="nofollow noopener noreferrer"
@@ -44,7 +63,7 @@
             >
           </li>
           <li>
-            <a
+            <a class="link"
               href="https://www.youtube.com"
               target="_blank"
               rel="nofollow noopener noreferrer"
@@ -53,21 +72,25 @@
           </li>
         </ul>
         <div>
-          <p>A hair salon for men in Kyiv</p>
-          <h1>BarberShop</h1>
-          <p>
+          <p class="hero-up-txt">A hair salon for men in Kyiv</p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-txt">
             We are experts in trendy men’s haircuts. We work quickly, carefully
             and with style.
           </p>
         </div>
-        <ul>
-          <li><button type="button">Back</button></li>
-          <li><button type="button">Forward</button></li>
+        <ul class="list">
+          <li>
+            <button type="button">Back</button></li>
+          <li>
+            <button type="button">Forward</button></li>
         </ul>
+        </div>
       </section>
       <!--section 2-->
-      <section>
-        <ul>
+      <section class="section">
+        <div class="container">
+        <ul class="list">
           <li>
             <img
               src="./images/section2/img1.jpg"
@@ -99,16 +122,18 @@
             the same wave" with clients. Therefore, we are always ready to
             improve everyone who comes to us!
           </p>
-          <button type="button">ONLINE-BOOKING</button>
+          <button class="btn" type="button">ONLINE-BOOKING</button>
+        </div>
         </div>
       </section>
       <!--section 3 services and prices-->
-      <section>
+      <section class="section">
+        <div class="container">
         <p>spend your time with the best masters</p>
         <h2>Services and prices</h2>
-        <ul>
+        <ul class="list">
           <li>
-            <ul>
+            <ul class="list">
               <li>Men’s haircut from 300 uah.</li>
               <li>Beard trim from 300 uah.</li>
               <li>Mustache trim from 200 uah.</li>
@@ -116,7 +141,7 @@
             </ul>
           </li>
           <li>
-            <ul>
+            <ul class="list">
               <li>Trainee’s haircut from 50 uah.</li>
               <li>Haircut under the nozzle from 200 uah.</li>
               <li>Children’s haircut (0-12 y.o.) from 300 uah.</li>
@@ -125,10 +150,12 @@
           </li>
         </ul>
         <button type="button">ONLINE-BOOKING</button>
+        </div>
       </section>
       <!--section 4 benefits-->
-      <section>
-        <ul>
+      <section class="section">
+        <div class="container">
+        <ul class="list">
           <li>
             <p>600 <sup>&#43;</sup></p>
             <p>Satisfied customers per day</p>
@@ -151,16 +178,18 @@
             <h2>Why people come to us?</h2>
             <p>Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
         </div>
+        </div>
       </section>
       <!--section 5 team-->
-      <section>
+      <section class="section">
+        <div class="container">
         <p>for true enjoyers of the atmosphere</p>
         <h2>Our barbers</h2>
-        <ul>
+        <ul class="list">
             <li><img src="./images/section5/img1.jpg" alt="Straight razor shave" width="370" height="346">
             <h3>John Smith</h3>
             <p>Extreme Barber</p>
-            <ul>
+            <ul class="list">
                 <li>
                     <a href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram"> Instagram </a>
                 </li>
@@ -179,7 +208,7 @@
             <img src="./images/section5/img2.jpg" alt="Men’s haircut" width="370" height="346">
             <h3>Michele Doe</h3>
             <p>Extreme Barber</p>
-            <ul>
+            <ul class="list">
                 <li>
                     <a href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a>
                 </li>
@@ -198,7 +227,7 @@
             <img src="./images/section5/img3.jpg" alt="Haircut under the nozzle" width="370" height="346">
             <h3>Alan Black</h3>
             <p>Extreme Barber</p>
-            <ul>
+            <ul class="list">
                 <li>
                     <a href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a>
                 </li>
@@ -214,30 +243,40 @@
             </ul>
         </li>
         </ul>
+        </div>
       </section>
       <!--section 6 photos-->
-      <section>
+      <section class="section">
+        <div class="container">
         <h2 hidden>Work gallery</h2>
         <p>in Latin, "barba" means "beard"</p>
-        <ul>
+        <ul class="list">
             <li><img src="./images/section6/gallery-img-1.jpg" alt="Men’s haircut" width="270" height="360"></li>
             <li><img src="./images/section6/gallery-img-2.jpg" alt="Beard trim" width="270" height="360"></li>
             <li><img src="./images/section6/gallery-img-3.jpg" alt="Haircut under the nozzle" width="270" height="360"></li>
             <li><img src="./images/section6/gallery-img-4.jpg" alt="Straight razor shave" width="270" height="360"></li>
         </ul>
+        </div>
       </section>
       <!--section 7-->
       <div>
+        <div class="container">
         <section>
             <h2>Online-booking</h2>
         </section>
         <section>
             <h2>Contacts</h2>
             <address>
-                <ul>
-                    <li><a href="https://goo.gl/maps/XipKVq6FiawVe3Co7" target="_blank" rel="nooener noreferrer">st. Vasil'kivska, 7A Kyiv, 08132</a></li>
-                    <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                    <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+                <ul class="list">
+                    <li>
+                      <a class="link" href="https://goo.gl/maps/XipKVq6FiawVe3Co7" target="_blank" rel="nooener noreferrer">st. Vasil'kivska, 7A Kyiv, 08132</a>
+                    </li>
+                    <li>
+                      <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
+                    </li>
+                    <li>
+                      <a class="link" href="mailto:barbershop@email.com">barbershop@email.com</a>
+                    </li>
                 </ul>
             </address>
             <div>
@@ -245,13 +284,15 @@
                 <p>Every day from  <time datetime="09:00">9:00</time> to <time datetime="22:00">22:00</time></p>
             </div>
         </section>
+        </div>
       </div>
     </main>
     <footer>
+      <div class="container">
       <p>&#169;Copyright 2020</p>
-      <ul>
+      <ul class="list">
         <li>
-          <a
+          <a class="link"
             href="https://www.instagram.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
@@ -259,7 +300,7 @@
           >
         </li>
         <li>
-          <a
+          <a class="link"
             href="https://www.youtube.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
@@ -267,6 +308,7 @@
           >
         </li>
       </ul>
+      </div>
     </footer>
   </body>
 </html>
